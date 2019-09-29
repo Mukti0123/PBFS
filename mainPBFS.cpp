@@ -17,7 +17,7 @@ int main(int argc, char** argv)
   graph g = {nvertices, medges, cols, rows}; // graph object
   int srcv = rand()%nvertices; // starting vertex 
   cout<<"# vertices and  # edges:"<<nvertices<<" "<<medges<<endl;
-  SerialBFS2Q(&g, srcv, nthreads); // serial execution
+  //SerialBFS2Q(&g, srcv, nthreads); // serial execution
   ParallelBFS2Q(&g, srcv, nthreads); // parallel execution
   return 0;
 }
